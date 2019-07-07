@@ -35,4 +35,5 @@ The exported function from `git-env` accepts 2 paramters:
 
 ### Notes
 
-If your directory doesn't have a `.git` directory (meaning it's not a git project), the branch name is `_none_`.
+- If your directory doesn't have a `.git` directory (meaning it's not a git project), the branch name is `_none_`.
+- You can override the branch name detection (for testing, for example) using the GIT_ENV enviornment variable.

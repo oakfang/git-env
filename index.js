@@ -6,6 +6,8 @@ const dotenvExpand = require("dotenv-expand");
 const camelCase = require("lodash.camelcase");
 
 const currentBranch = () => {
+  const env = process.env.GIT_ENV;
+  if (env) return env;
   try {
     return gitBranch.sync();
   } catch {
