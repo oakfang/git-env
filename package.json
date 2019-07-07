@@ -1,0 +1,29 @@
+{
+  "name": "git-env",
+  "version": "0.1.0",
+  "description": "Use dotfiles per git branch",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oakfang/git-env.git"
+  },
+  "keywords": [
+    "git",
+    "env"
+  ],
+  "author": "Alon Niv",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/oakfang/git-env/issues"
+  },
+  "homepage": "https://github.com/oakfang/git-env#readme",
+  "dependencies": {
+    "dotenv": "^8.0.0",
+    "dotenv-expand": "^5.1.0",
+    "git-branch": "^2.0.1",
+    "lodash.camelcase": "^4.3.0"
+  }
+}
