@@ -36,11 +36,10 @@ function config(fallback, options) {
     path: path.join(cwd, filePath)
   });
   dotenvExpand(env);
-  const { parsed } = env;
-  return Object.keys(parsed).reduce(
+  return Object.keys(process.env).reduce(
     (vars, key) => ({
       ...vars,
-      [camelCase(key)]: parsed[key]
+      [camelCase(key)]: process.env[key]
     }),
     {}
   );
